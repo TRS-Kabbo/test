@@ -2,13 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="TRS">
     <meta name="description" content="This page contanins all the thing I am lerning how to create as I learn HTML.">
+    <style>
+        /* Basic styling for the login form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c0606;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #030101;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .login-container .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 <title> My 1'st web page</title>
-<link rel="icon" href="hola.png" type="image/x-icon">
+<link rel="icon" href="me.jpg" type="image/x-icon">
 <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="action_page.php" method="post">
+            <label for="myUsername">Username:</label>
+            <input type="text"
+            id="myUsername" name="username"
+            placeholder="Enter Username" required>
+            <label for="psw">Password:</label>
+            <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+    </div>
     <h1> Hello world! </h1>
 
     <hr>
